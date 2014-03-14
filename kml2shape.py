@@ -6,7 +6,7 @@ def main():
 	with open('shapes.txt', 'wb') as csvfile:
 		spamwriter = csv.writer(csvfile)
 		spamwriter.writerow(["shape_id","shape_pt_sequence","shape_dist_traveled","shape_pt_lat","shape_pt_lon"])
-		prefix = 'GCT_Route'
+		prefix = 'data/GCT_Route'
 		routes = {"101": "","102": "","103": "","103A": "","10B": "","20": "","30": "","35": "","40": "","410": "","412": "","418": "","10A": ""}
 		for route in routes.keys():
 			fn = prefix + route
